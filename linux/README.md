@@ -1,5 +1,18 @@
 # Issues on Linux
 
+**_Add new SSH key to github_**
+
+```
+ls -al ~/.ssh  # Lists the files in your .ssh directory, if they exist
+ssh-keygen -t rsa -b 4096 -C "guohongyi@sjtu.edu.cn"
+eval "$(ssh-agent -s)"
+ssh-add -k ~/.ssh/id_rsa
+```
+
+Copy SSH key stored in `~/.ssh/id_rsa.pub` to github account
+
+------
+
 **_E: Could not get lock /var/cache/apt/archives/lock - open (11: Resource temporarily unavailable)_**
 
 **_E: Unable to lock directory /var/cache/apt/archives/_**
