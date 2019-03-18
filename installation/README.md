@@ -11,3 +11,17 @@ $ source ~/.bashrc  # On Linux with bash
 $ source ~/.zshrc  # On Linux with zsh
 $ source ~/.profile  # On OSX or in Linux with none of the above.
 ```
+
+### libsvm
+
+```
+# download libsvm from https://www.csie.ntu.edu.tw/~cjlin/libsvm/#download
+$ make  # in libsvm/
+$ make  # in libsvm/python/
+```
+
+when using libsvm, you need to:
+```
+import sys
+sys.path.append('path/to/libsvm/python')
+```
