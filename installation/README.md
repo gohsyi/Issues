@@ -3,6 +3,7 @@
 ### cv2
 ```
 sudo apt-get install python-opencv
+pip install opencv-python
 ```
 
 ### torch7
