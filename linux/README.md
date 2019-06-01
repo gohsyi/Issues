@@ -1,5 +1,36 @@
 # Issues on Linux
 
+**_Change apt-get sources_**
+
+First, check which version of Ubuntu you are using.
+```
+lsb_release -c
+```
+
+| Codename |   version   |
+|----------|-------------|
+|  bionic  | 18.04 (LTS) |
+|  xenial  | 16.04 (LTS) |
+|  trusty  | 14.04 (LTS) |
+|  precise | 12.04 (LTS) |
+
+Take Ubuntu 16.04 (LTS) for example, replace `etc/apt/sources.list` with following content:
+
+```
+deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse
+```
+
+------
+
 **_Add new SSH key to github_**
 
 ```
