@@ -1,5 +1,22 @@
 # Issues on Linux
 
+**_Passwordless login on Mac OS_**
+
+First, add this in `~/.ssh/config`
+```
+Host <alias>
+     Hostname <address>
+     User <your login username>
+     Port <port number>
+```
+
+Then, run this on localhost
+```
+ssh-copy-id -i ~/.ssh/id_rsa.pub <alias>
+```
+
+------
+
 **_Change apt-get sources_**
 
 First, check which version of Ubuntu you are using.
