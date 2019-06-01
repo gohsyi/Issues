@@ -15,6 +15,11 @@ Then, run this on localhost
 ssh-copy-id -i ~/.ssh/id_rsa.pub <alias>
 ```
 
+Now, you can login your server with:
+```
+ssh <alias>
+```
+
 ------
 
 **_Change apt-get sources_**
