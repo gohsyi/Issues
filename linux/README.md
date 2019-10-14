@@ -27,7 +27,6 @@ Now, you can login your server with:
 ssh <alias>
 ```
 
-------
 
 ## Change apt-get sources
 
@@ -58,7 +57,6 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe m
 deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse
 ```
 
-------
 
 ## Add new SSH key to github
 
@@ -71,7 +69,6 @@ ssh-add -k ~/.ssh/id_rsa
 
 Copy SSH key stored in `~/.ssh/id_rsa.pub` to github account
 
-------
 
 ## E: Could not get lock /var/cache/apt/archives/lock - open (11: Resource temporarily unavailable)
 
@@ -88,5 +85,3 @@ sudo dpkg --configure -a
 
 > While you are trying to install some package with apt command, some other package manager is running or an update is going on.
 It is possible that you have Software Center open or another terminal is using the apt or apt-get commands.
-
-------
