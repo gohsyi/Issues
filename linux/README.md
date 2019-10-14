@@ -1,13 +1,13 @@
 # Issues on Linux
 
-**_Process still exists after I use kill \<pid\>_**
+## Process still exists after I use kill \<pid\>_
 
 Processes can ignore some signals. If you send SIGKILL it will not be able to ignore it (and neither catch it to do cleanups). Try:
 
 kill -9 {PID}
 
 
-**_Passwordless login on Mac OS_**
+## Passwordless login on Mac OS
 
 First, add this in `~/.ssh/config`
 ```
@@ -29,7 +29,7 @@ ssh <alias>
 
 ------
 
-**_Change apt-get sources_**
+## Change apt-get sources
 
 First, check which version of Ubuntu you are using.
 ```
@@ -60,7 +60,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted univer
 
 ------
 
-**_Add new SSH key to github_**
+## Add new SSH key to github
 
 ```
 ls -al ~/.ssh  # Lists the files in your .ssh directory, if they exist
@@ -73,9 +73,9 @@ Copy SSH key stored in `~/.ssh/id_rsa.pub` to github account
 
 ------
 
-**_E: Could not get lock /var/cache/apt/archives/lock - open (11: Resource temporarily unavailable)_**
+## E: Could not get lock /var/cache/apt/archives/lock - open (11: Resource temporarily unavailable)
 
-**_E: Unable to lock directory /var/cache/apt/archives/_**
+## E: Unable to lock directory /var/cache/apt/archives/
 
 [solution] https://itsfoss.com/fix-ubuntu-install-error/
 
