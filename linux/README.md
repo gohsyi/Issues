@@ -1,5 +1,12 @@
 # Issues on Linux
 
+**_Process still exists after I use kill \<pid\>_**
+
+Processes can ignore some signals. If you send SIGKILL it will not be able to ignore it (and neither catch it to do cleanups). Try:
+
+kill -9 {PID}
+
+
 **_Passwordless login on Mac OS_**
 
 First, add this in `~/.ssh/config`
