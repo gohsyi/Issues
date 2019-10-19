@@ -1,5 +1,11 @@
 # Issues on Linux
 
+## ImportError: libgthread-2.0.so.0: cannot open shared object file: No such file or directory
+
+```
+sudo apt-get install libglib2.0-0
+```
+
 ## Process still exists after I use kill \<pid\>_
 
 Processes can ignore some signals. If you send SIGKILL it will not be able to ignore it (and neither catch it to do cleanups). Try:
